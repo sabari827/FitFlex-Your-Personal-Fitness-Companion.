@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFlex: Your Personal Fitness Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Custom CSS for animations and enhancements */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse { animation: pulse 2s infinite; }
+        .bg-gradient-custom { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-600">FitFlex</h1>
+                    <span class="text-gray-600 ml-2">Your Personal Fitness Companion</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#hero" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600">Features</a>
+                    <a href="#tools" class="text-gray-700 hover:text-blue-600">Tools</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-custom text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-5xl font-bold mb-4 text-shadow">Transform Your Body, Elevate Your Mind</h2>
+                <p class="text-xl mb-8">Welcome to FitFlex, your ultimate companion for achieving fitness goals. Track workouts, plan meals, and monitor progress all in one place.</p>
+                <button class="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition pulse">Get Started</button>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ff97797e-bb1b-4b52-b523-e5a0618a7f0a.png" alt="Motivational fitness image of a diverse group of people exercising outdoors in a park setting with yoga mats, dumbbells, and a sunset background, conveying energy and community" class="w-full h-auto rounded-lg shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Key Features</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <i class="fas fa-dumbbell text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-2xl font-semibold mb-4">Workout Plans</h4>
+                    <p>Customized workout routines for all levels, from beginners to advanced athletes. Track reps, sets, and progress seamlessly.</p>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d2cae75-4b75-4a03-bfef-787366639929.png" alt="Illustrative image of a fitness workout plan showing a split-screen with a muscular person weightlifting in a gym environment and a digital interface displaying exercise charts and progress graphs" class="mt-4 w-full h-48 object-cover rounded" />
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <i class="fas fa-utensils text-4xl text-green-600 mb-4"></i>
+                    <h4 class="text-2xl font-semibold mb-4">Nutrition Tracker</h4>
+                    <p>Plan meals, calorie counting, and nutritional analysis. Achieve balance with recipes and macros tracking.</p>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/53857d7f-fc26-48e8-806a-54c832da871f.png" alt="Vibrant nutrition tracker image featuring a healthy meal of salad with grilled chicken, fruits, and a mobile app screen showing calorie breakdown and nutritional data overlays" class="mt-4 w-full h-48 object-cover rounded" />
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <i class="fas fa-chart-line text-4xl text-purple-600 mb-4"></i>
+                    <h4 class="text-2xl font-semibold mb-4">Progress Dashboard</h4>
+                    <p>Visualize your journey with graphs, achievements, and insights. Stay motivated with real-time progress updates.</p>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad4eaaeb-3a06-4057-873e-7d3fd5e0f89e.png" alt="Dynamic progress dashboard illustration showing a fitness app interface with bar charts indicating weight loss, workout completion rates, and milestone badges in a cool blue and purple color scheme" class="mt-4 w-full h-48 object-cover rounded" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Fitness Tools</h3>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h4 class="text-2xl font-semibold mb-4">BMI Calculator</h4>
+                <p class="mb-6">Calculate your Body Mass Index quickly and get suggestions for improvement.</p>
+                <form id="bmi-form" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="weight" class="block text-sm font-medium text-gray-700">Weight (kg)</label>
+                        <input type="number" id="weight" step="0.1" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="height" class="block text-sm font-medium text-gray-700">Height (m)</label>
+                        <input type="number" id="height" step="0.01" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </form>
+                <button id="calculate-bmi" class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition">Calculate BMI</button>
+                <div id="bmi-result" class="mt-6 text-lg font-semibold text-gray-800"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">About FitFlex</h3>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9094dbc5-e457-416f-9037-ecca84fa12f8.png" alt="Team photo of FitFlex developers and fitness experts posing confidently in a modern office with gym equipment in the background, symbolizing collaboration and expertise" class="w-full h-auto rounded-lg shadow-lg" />
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <p class="text-lg text-gray-700 mb-6">FitFlex is designed to empower you on your fitness journey. Our platform offers personalized tools, expert advice, and community support to help you reach your peak performance.</p>
+                    <p class="text-lg text-gray-700">Whether you're starting your first workout or fine-tuning an advanced routine, FitFlex adapts to your needs with cutting-edge technology and user-friendly interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2023 FitFlex. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for BMI Calculator -->
+    <script>
+        document.getElementById('calculate-bmi').addEventListener('click', function() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            if (weight && height && height > 0) {
+                const bmi = (weight / (height * height)).toFixed(2);
+                let interpretation = '';
+                if (bmi < 18.5) interpretation = 'Underweight - Consider gaining weight healthily.';
+                else if (bmi < 24.9) interpretation = 'Normal weight - Great job!';
+                else if (bmi < 29.9) interpretation = 'Overweight - Focus on healthy habits.';
+                else interpretation = 'Obese - Consult a professional for guidance.';
+                document.getElementById('bmi-result').innerHTML = <p>BMI: ${bmi}</p><p>${interpretation}</p>;
+            } else {
+                document.getElementById('bmi-result').innerHTML = '<p>Please enter valid values.</p>';
+            }
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
